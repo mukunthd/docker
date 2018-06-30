@@ -1,10 +1,12 @@
 # Basics of Docker 
 
-#Build Docker Image By Running the Following Command.
+#Build Docker Image By Running the Following Command
+
 $docker build -t jenkinsdemo . # -t = Tag 
 
 
-#To Run Containers.
+#To Run Containers
+
 $docker run -it -p 2222:8080 jenkinsdemo # -i = interactive ; -t terminal
 
 #In host's browser type localhost:2222 for Jenkins Setup
