@@ -8,6 +8,3 @@ RUN wget -q -O - https://jenkins-ci.org/debian/jenkins-ci.org.key | apt-key add 
     apt-get install -y default-jdk &&\
     apt-get install -y jenkins
 EXPOSE 8080
-#ADD run.sh /tmp/
-#RUN chmod 777 /tmp/*.sh
-#CMD /tmp/run.sh
