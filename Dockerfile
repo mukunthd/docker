@@ -1,4 +1,6 @@
 FROM ubuntu:16.04
+MAINTAINER Mukunthan Doraiswamy
+#Docker File for Jenkins Installation on Ubuntu
 RUN apt-get update &&\
     apt-get install -y wget
 RUN wget -q -O - https://jenkins-ci.org/debian/jenkins-ci.org.key | apt-key add - &&\
