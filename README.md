@@ -9,7 +9,9 @@ $docker build -t jenkinsdemo . # -t = Tag
 
 $docker run -it -p 2222:8080 jenkinsdemo # -i = interactive ; -t terminal
 
-# In host's browser type localhost:2222 for Jenkins Setup
+# In host's browser type 
+
+localhost:2222 for Jenkins Setup
 
 # Some of the Docker Commands
 
