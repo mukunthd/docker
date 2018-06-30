@@ -10,6 +10,7 @@ $docker run -it -p 2222:8080 jenkinsdemo # -i = interactive ; -t terminal
 #In host's browser type localhost:2222 for Jenkins Setup
 
 #Some of the Docker Commands
+
 docker images --> to list the images
 
 docker ps  --> to see the running containers
