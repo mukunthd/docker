@@ -8,7 +8,7 @@ pipeline {
        }
         stage ('DockerBuild') {
            steps {
-            sh 'service docker start'
+            sh 'su service docker start'
             sh 'docker build -t mukunth .'
          }
       }
