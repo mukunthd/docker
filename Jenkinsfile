@@ -10,6 +10,11 @@ pipeline {
            steps {
             sh 'docker build -t mukunth .'
          }
+        stage ('DockerPush') {
+           steps {
+            sh 'docker tag mukunth mukunth/jenkins:1.0.0'
+            sh 'docker push mukunth/jenkins:1.0.0 .'
+         }
       }
    }
 }
