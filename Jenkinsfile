@@ -1,13 +1,15 @@
 pipeline {
  agent any
      stages {
-       stage {'build'}
+       stage ('checkout') {
           steps {
-             echo "hello"
+             checkout changelog: false, poll: false, scm: [$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: '2b0c3b64-fe74-4138-b5a4-1f0f7cf2477b', url: 'https://github.com/mukunthd/docker-basics']]]
            }
-        stage {'Test'}
+       }
+        stage ('test') {
            steps {
-            echo "Mukunth"
+            echo 'Hello Mukunth'
          }
+      }
    }
 }
